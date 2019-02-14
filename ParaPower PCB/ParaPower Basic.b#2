@@ -274,6 +274,23 @@ by exp-lbrs.ulp</description>
 </package>
 </packages>
 </library>
+<library name="userlib">
+<description>User library</description>
+<packages>
+<package name="TP4056-LITHIUM-PROTECTED-MODULE">
+<wire x1="-12.7" y1="8.255" x2="12.7" y2="8.255" width="0.127" layer="21"/>
+<wire x1="12.7" y1="8.255" x2="12.7" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-8.255" x2="-12.7" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-8.255" x2="-12.7" y2="8.255" width="0.127" layer="21"/>
+<pad name="IN+" x="-11.43" y="6.985" drill="0.9" shape="square"/>
+<pad name="IN-" x="-11.43" y="-6.35" drill="0.9" shape="square"/>
+<pad name="OUT-" x="10.795" y="-6.35" drill="0.9" shape="square"/>
+<pad name="OUT+" x="10.795" y="6.985" drill="0.9" shape="square"/>
+<pad name="B+" x="10.795" y="4.445" drill="0.9" shape="square"/>
+<pad name="B-" x="10.795" y="-3.81" drill="0.9" shape="square"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -480,6 +497,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="16.65" y="72.39" size="0.8128" layer="25" rot="R270" align="center"/>
 <attribute name="VALUE" x="16.51" y="45.58" size="0.8128" layer="27" rot="R180" align="center"/>
 </element>
+<element name="U$1" library="userlib" package="TP4056-LITHIUM-PROTECTED-MODULE" value="TP4056-MODULE" x="13.97" y="-8.89" smashed="yes"/>
+<element name="U$2" library="userlib" package="TP4056-LITHIUM-PROTECTED-MODULE" value="TP4056-MODULE" x="13.97" y="-26.67" smashed="yes"/>
+<element name="U$3" library="userlib" package="TP4056-LITHIUM-PROTECTED-MODULE" value="TP4056-MODULE" x="13.97" y="-44.45" smashed="yes"/>
 </elements>
 <signals>
 <signal name="+">
@@ -495,6 +515,48 @@ design rules under a new name.</description>
 <contactref element="BAT3" pad="2"/>
 <wire x1="122.22" y1="53.774" x2="122.22" y2="23.294" width="0" layer="19" extent="1-1"/>
 <wire x1="122.22" y1="85.524" x2="122.22" y2="53.774" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="IN+">
+<contactref element="U$1" pad="IN+"/>
+<contactref element="U$2" pad="IN+"/>
+<contactref element="U$3" pad="IN+"/>
+<wire x1="2.54" y1="-19.685" x2="2.54" y2="-37.465" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="-19.685" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="IN-">
+<contactref element="U$1" pad="IN-"/>
+<contactref element="U$2" pad="IN-"/>
+<contactref element="U$3" pad="IN-"/>
+<wire x1="2.54" y1="-33.02" x2="2.54" y2="-50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-15.24" x2="2.54" y2="-33.02" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="OUT+">
+<contactref element="U$1" pad="OUT+"/>
+<contactref element="U$2" pad="OUT+"/>
+<contactref element="U$3" pad="OUT+"/>
+<wire x1="24.765" y1="-19.685" x2="24.765" y2="-1.905" width="0" layer="19" extent="1-1"/>
+<wire x1="24.765" y1="-37.465" x2="24.765" y2="-19.685" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="B+">
+<contactref element="U$1" pad="B+"/>
+<contactref element="U$2" pad="B+"/>
+<contactref element="U$3" pad="B+"/>
+<wire x1="24.765" y1="-22.225" x2="24.765" y2="-4.445" width="0" layer="19" extent="1-1"/>
+<wire x1="24.765" y1="-40.005" x2="24.765" y2="-22.225" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="B-">
+<contactref element="U$1" pad="B-"/>
+<contactref element="U$2" pad="B-"/>
+<contactref element="U$3" pad="B-"/>
+<wire x1="24.765" y1="-30.48" x2="24.765" y2="-48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="24.765" y1="-12.7" x2="24.765" y2="-30.48" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="OUT-">
+<contactref element="U$1" pad="OUT-"/>
+<contactref element="U$2" pad="OUT-"/>
+<contactref element="U$3" pad="OUT-"/>
+<wire x1="24.765" y1="-33.02" x2="24.765" y2="-50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="24.765" y1="-15.24" x2="24.765" y2="-33.02" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
