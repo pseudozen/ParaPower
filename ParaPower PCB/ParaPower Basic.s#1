@@ -405,6 +405,114 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="FRAME_A_L">
+<frame x1="0" y1="0" x2="279.4" y2="215.9" columns="6" rows="5" layer="94" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FRAME_A_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt; A Size , 8 1/2 x 11 INCH, Landscape&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FRAME_A_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="userlib">
+<description>User library</description>
+<packages>
+<package name="TP4056-LITHIUM-PROTECTED-MODULE">
+<wire x1="-12.7" y1="8.255" x2="12.7" y2="8.255" width="0.127" layer="21"/>
+<wire x1="12.7" y1="8.255" x2="12.7" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-8.255" x2="-12.7" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-8.255" x2="-12.7" y2="8.255" width="0.127" layer="21"/>
+<pad name="IN+" x="-11.43" y="6.985" drill="0.9" shape="square"/>
+<pad name="IN-" x="-11.43" y="-6.35" drill="0.9" shape="square"/>
+<pad name="OUT-" x="10.795" y="-6.35" drill="0.9" shape="square"/>
+<pad name="OUT+" x="10.795" y="6.985" drill="0.9" shape="square"/>
+<pad name="B+" x="10.795" y="4.445" drill="0.9" shape="square"/>
+<pad name="B-" x="10.795" y="-3.81" drill="0.9" shape="square"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LITHIUM-CHG-PROTECT">
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="IN+" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="IN-" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
+<pin name="OUT+" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="B+" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="B-" x="12.7" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT-" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TP4056-MODULE">
+<gates>
+<gate name="G$1" symbol="LITHIUM-CHG-PROTECT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TP4056-LITHIUM-PROTECTED-MODULE">
+<connects>
+<connect gate="G$1" pin="B+" pad="B+"/>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="IN+" pad="IN+"/>
+<connect gate="G$1" pin="IN-" pad="IN-"/>
+<connect gate="G$1" pin="OUT+" pad="OUT+"/>
+<connect gate="G$1" pin="OUT-" pad="OUT-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -419,10 +527,15 @@ by exp-lbrs.ulp</description>
 <part name="BAT2" library="VanEagleLib" library_urn="urn:adsk.eagle:library:5408729" deviceset="KEYSTONE-1042" device="" package3d_urn="urn:adsk.eagle:package:8894325/1"/>
 <part name="BAT3" library="VanEagleLib" library_urn="urn:adsk.eagle:library:5408729" deviceset="KEYSTONE-1042" device="" package3d_urn="urn:adsk.eagle:package:8894325/1"/>
 <part name="U1" library="VCO - Pod Daughterboard v2.0" deviceset="ESP32_ESP-WROOM-32" device=""/>
+<part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
+<part name="U$1" library="userlib" deviceset="TP4056-MODULE" device=""/>
+<part name="U$2" library="userlib" deviceset="TP4056-MODULE" device=""/>
+<part name="U$3" library="userlib" deviceset="TP4056-MODULE" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="266.7" y="7.62" size="1.778" layer="91">1</text>
 </plain>
 <instances>
 <instance part="BAT1" gate="G$1" x="53.34" y="86.36" smashed="yes">
@@ -437,10 +550,19 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="53.34" y="49.784" size="1.27" layer="95"/>
 <attribute name="VALUE" x="53.34" y="35.56" size="1.27" layer="96"/>
 </instance>
-<instance part="U1" gate="G$1" x="129.54" y="124.46" smashed="yes">
-<attribute name="NAME" x="116.84" y="142.494" size="1.778" layer="95"/>
-<attribute name="VALUE" x="116.84" y="136.906" size="1.778" layer="96" align="top-left"/>
+<instance part="U1" gate="G$1" x="190.5" y="165.1" smashed="yes">
+<attribute name="NAME" x="177.8" y="183.134" size="1.778" layer="95"/>
+<attribute name="VALUE" x="177.8" y="177.546" size="1.778" layer="96" align="top-left"/>
 </instance>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME1" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
+<instance part="U$1" gate="G$1" x="91.44" y="86.36" smashed="yes"/>
+<instance part="U$2" gate="G$1" x="91.44" y="66.04" smashed="yes"/>
+<instance part="U$3" gate="G$1" x="91.44" y="43.18" smashed="yes"/>
 </instances>
 <busses>
 </busses>

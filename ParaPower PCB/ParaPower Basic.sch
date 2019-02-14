@@ -173,11 +173,61 @@
 <text x="-43.18" y="12.7" size="2.54" layer="21">+</text>
 <text x="40.64" y="12.7" size="2.54" layer="21">-</text>
 </package>
+<package name="SOT23-5L" urn="urn:adsk.eagle:footprint:8894410/1" library_version="29">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
+package type OT</description>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
+<package name="2CT-VIAS" urn="urn:adsk.eagle:footprint:7547423/1" library_version="29">
+<pad name="1" x="-1.27" y="1.27" drill="0.6"/>
+<pad name="2" x="1.27" y="1.27" drill="0.6"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.127" layer="21"/>
+<circle x="-1.27" y="1.27" radius="0.740528125" width="0.3302" layer="21"/>
+<text x="-2.667" y="3.302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.667" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="KEYSTONE_1042" urn="urn:adsk.eagle:package:8894325/1" type="box" library_version="28">
 <packageinstances>
 <packageinstance name="KEYSTONE_1042"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23-5L" urn="urn:adsk.eagle:package:8894413/1" type="model" library_version="29">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
+package type OT</description>
+<packageinstances>
+<packageinstance name="SOT23-5L"/>
+</packageinstances>
+</package3d>
+<package3d name="2CT-VIAS" urn="urn:adsk.eagle:package:7547424/1" type="box" library_version="29">
+<packageinstances>
+<packageinstance name="2CT-VIAS"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -191,6 +241,29 @@
 <wire x1="5.08" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <text x="0" y="6.604" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="TPS736" urn="urn:adsk.eagle:symbol:8894409/1" library_version="29">
+<pin name="IN" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="0" length="middle" direction="pwr"/>
+<pin name="EN" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="FB" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="OUT" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.874" y="8.89" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="2CT-POWER-JP" urn="urn:adsk.eagle:symbol:7547422/1" library_version="29">
+<pin name="VCC" x="-2.54" y="5.08" length="middle"/>
+<pin name="GND" x="-2.54" y="2.54" length="middle"/>
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="8.89" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -206,6 +279,49 @@
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:8894325/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS736" urn="urn:adsk.eagle:component:8894414/1" prefix="U" library_version="29">
+<description>TI TPS73601DBVR - LDO Adjustable Regulator in SOT-23-5 package</description>
+<gates>
+<gate name="G$1" symbol="TPS736" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5L">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8894413/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POWER-VIAS" urn="urn:adsk.eagle:component:7547425/1" prefix="J" library_version="29">
+<description>Generic through-hole vias, meant for connection to external power jack or high-current device.</description>
+<gates>
+<gate name="G$1" symbol="2CT-POWER-JP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2CT-VIAS">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7547424/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -460,6 +576,59 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="userlib">
+<description>User library</description>
+<packages>
+<package name="TP4056-LITHIUM-PROTECTED-MODULE">
+<wire x1="-12.7" y1="8.255" x2="12.7" y2="8.255" width="0.127" layer="21"/>
+<wire x1="12.7" y1="8.255" x2="12.7" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-8.255" x2="-12.7" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-8.255" x2="-12.7" y2="8.255" width="0.127" layer="21"/>
+<pad name="IN+" x="-11.43" y="6.985" drill="0.9" shape="square"/>
+<pad name="IN-" x="-11.43" y="-6.35" drill="0.9" shape="square"/>
+<pad name="OUT-" x="10.795" y="-6.35" drill="0.9" shape="square"/>
+<pad name="OUT+" x="10.795" y="6.985" drill="0.9" shape="square"/>
+<pad name="B+" x="10.795" y="4.445" drill="0.9" shape="square"/>
+<pad name="B-" x="10.795" y="-3.81" drill="0.9" shape="square"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LITHIUM-CHG-PROTECT">
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="IN+" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="IN-" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
+<pin name="OUT+" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="B+" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="B-" x="12.7" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT-" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TP4056-MODULE">
+<gates>
+<gate name="G$1" symbol="LITHIUM-CHG-PROTECT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TP4056-LITHIUM-PROTECTED-MODULE">
+<connects>
+<connect gate="G$1" pin="B+" pad="B+"/>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="IN+" pad="IN+"/>
+<connect gate="G$1" pin="IN-" pad="IN-"/>
+<connect gate="G$1" pin="OUT+" pad="OUT+"/>
+<connect gate="G$1" pin="OUT-" pad="OUT-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -475,11 +644,17 @@ by exp-lbrs.ulp</description>
 <part name="BAT3" library="VanEagleLib" library_urn="urn:adsk.eagle:library:5408729" deviceset="KEYSTONE-1042" device="" package3d_urn="urn:adsk.eagle:package:8894325/1"/>
 <part name="U1" library="VCO - Pod Daughterboard v2.0" deviceset="ESP32_ESP-WROOM-32" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
+<part name="U$1" library="userlib" deviceset="TP4056-MODULE" device=""/>
+<part name="U$2" library="userlib" deviceset="TP4056-MODULE" device=""/>
+<part name="U$3" library="userlib" deviceset="TP4056-MODULE" device=""/>
+<part name="U2" library="VanEagleLib" library_urn="urn:adsk.eagle:library:5408729" deviceset="TPS736" device="" package3d_urn="urn:adsk.eagle:package:8894413/1"/>
+<part name="J1" library="VanEagleLib" library_urn="urn:adsk.eagle:library:5408729" deviceset="POWER-VIAS" device="" package3d_urn="urn:adsk.eagle:package:7547424/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="266.7" y="7.62" size="1.778" layer="91">1</text>
+<text x="223.52" y="96.52" size="1.778" layer="91">5V IN</text>
 </plain>
 <instances>
 <instance part="BAT1" gate="G$1" x="53.34" y="86.36" smashed="yes">
@@ -494,9 +669,9 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="53.34" y="49.784" size="1.27" layer="95"/>
 <attribute name="VALUE" x="53.34" y="35.56" size="1.27" layer="96"/>
 </instance>
-<instance part="U1" gate="G$1" x="129.54" y="124.46" smashed="yes">
-<attribute name="NAME" x="116.84" y="142.494" size="1.778" layer="95"/>
-<attribute name="VALUE" x="116.84" y="136.906" size="1.778" layer="96" align="top-left"/>
+<instance part="U1" gate="G$1" x="190.5" y="165.1" smashed="yes">
+<attribute name="NAME" x="177.8" y="183.134" size="1.778" layer="95"/>
+<attribute name="VALUE" x="177.8" y="177.546" size="1.778" layer="96" align="top-left"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="172.72" y="0" smashed="yes">
@@ -504,10 +679,56 @@ by exp-lbrs.ulp</description>
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
+<instance part="U$1" gate="G$1" x="91.44" y="86.36" smashed="yes"/>
+<instance part="U$2" gate="G$1" x="91.44" y="66.04" smashed="yes"/>
+<instance part="U$3" gate="G$1" x="91.44" y="43.18" smashed="yes"/>
+<instance part="U2" gate="G$1" x="170.18" y="81.28" smashed="yes">
+<attribute name="NAME" x="162.306" y="90.17" size="1.27" layer="95"/>
+<attribute name="VALUE" x="162.56" y="71.12" size="1.27" layer="96"/>
+</instance>
+<instance part="J1" gate="G$1" x="223.52" y="81.28" smashed="yes">
+<attribute name="NAME" x="223.52" y="90.17" size="1.27" layer="95"/>
+<attribute name="VALUE" x="223.52" y="78.74" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="+5V" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="VCC"/>
+<wire x1="220.98" y1="86.36" x2="213.36" y2="86.36" width="0.1524" layer="91"/>
+<label x="213.36" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="220.98" y1="83.82" x2="213.36" y2="83.82" width="0.1524" layer="91"/>
+<label x="213.36" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<wire x1="157.48" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND@1"/>
+<wire x1="172.72" y1="167.64" x2="165.1" y2="167.64" width="0.1524" layer="91"/>
+<label x="165.1" y="167.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="3V3" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="3V3"/>
+<wire x1="172.72" y1="165.1" x2="165.1" y2="165.1" width="0.1524" layer="91"/>
+<label x="165.1" y="165.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="OUT"/>
+<wire x1="182.88" y1="86.36" x2="193.04" y2="86.36" width="0.1524" layer="91"/>
+<label x="193.04" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
